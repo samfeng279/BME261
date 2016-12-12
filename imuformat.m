@@ -14,20 +14,20 @@ timepitch = linspace(0, dt*length(pitch), length(pitch));
 figure
 plot(timepitch, pitch), xlabel('Time(s)'), ylabel('pitch angle'), title('pitch angle') 
 
-% %ACCELERATION ON X AXIS:
-% timeAcX = linspace(0, dt*length(AcX), length(GyY));
-% figure
-% plot(timeAcX, AcX), xlabel('Time(s)'), ylabel('Acceleration (Counts)'), title('Acceleration on X-Axis')
-% 
-% %ACCELERATION ON Y AXIS:
-% timeAcY = linspace(0, dt*length(AcY), length(AcY));
-% figure
-% plot(timeAcY, AcY), xlabel('Time(s)'), ylabel('Acceleration (Counts)'), title('Acceleration on Y-Axis')
-% 
-% %ACCELERATION ON Z AXIS:
-% timeAcZ = linspace(0, dt*length(AcZ), length(AcZ));
-% figure
-% plot(timeAcZ, AcZ), xlabel('Time(s)'), ylabel('Acceleration (Counts)'), title('Acceleration on Z-Axis')
+%ACCELERATION ON X AXIS:
+timeAcX = linspace(0, dt*length(AcX), length(GyY));
+figure
+plot(timeAcX, AcX), xlabel('Time(s)'), ylabel('Acceleration (Counts)'), title('Acceleration on X-Axis')
+ 
+%ACCELERATION ON Y AXIS:
+timeAcY = linspace(0, dt*length(AcY), length(AcY));
+figure
+plot(timeAcY, AcY), xlabel('Time(s)'), ylabel('Acceleration (Counts)'), title('Acceleration on Y-Axis')
+
+%ACCELERATION ON Z AXIS:
+timeAcZ = linspace(0, dt*length(AcZ), length(AcZ));
+figure
+plot(timeAcZ, AcZ), xlabel('Time(s)'), ylabel('Acceleration (Counts)'), title('Acceleration on Z-Axis')
 
 %ANGULAR ACCELERATION ABOUT X AXIS:
 timeGyX = linspace(0, dt*length(GyX), length(GyX));
